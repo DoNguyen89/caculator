@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC >
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+    <script type="text/javascript">
+    </script>
+    <title>caculator</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <input class="show" id="ketqua" type="text" style="width: 170px"/>
+    <div>
+        <input type="button" value="1" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="2" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="3" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" class="nut operator" value="+" onclick="ketqua.value+=this.value"/>
+    </div>
+    <div>
+        <input type="button" value="4" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="5" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="6" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" class="nut tru" value="-" onclick="ketqua.value+=this.value"/>
+    </div>
+    <div>
+        <input type="button" value="7" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="8" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" value="9" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" class="nut nhan" value="*" onclick="ketqua.value+=this.value"/>
+    </div>
+    <div>
+        <input type="button" class="nut" value="C" onclick="ketqua.value=''"/>
+        <input type="button" value="0" class="nut num" onclick="ketqua.value+=this.value"/>
+        <input type="button" class="nut" value="=" onclick="ketqua.value=eval(ketqua.value)"/>
+        <input type="button" class="nut chia" value="/" onclick="ketqua.value+=this.value"/>
+    </div>
+
+</div>
+</body>
+</html>
